@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+.App {
+  text-align: center;
+}
+.main{
+  position: relative;
+  width: 841px;
+  height: 266px;
+  background: #FFFFFF;
+}
+.tags-main{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 489px;
+  height: 166px;
+  left: 176px;
+  top: 50px;
+}
+.tags-main h3 {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12.8px;
+  line-height: 170%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #747474;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.tags-main span {
+  font-family: Noto Sans;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #606060;
+  margin-bottom: 15px;
+}
+.basic-multi-select{
+  width: 100%;
+}
+
+.basic-multi-select .select__control{
+  width: 100%;
+  min-height: 100px;
+  background: #EBEBEB;
+  padding: 10px 20px;
+  align-items: baseline;
+  border-radius: 0px;
+}
+
+.basic-multi-select.selected .select__control{
+  background: none;
+  border: none !important;
+}
+
+.basic-multi-select .select__indicators{
+  display: none;
+}
+
+.basic-multi-select .select__control--is-focused {
+  background: #EBEBEB !important;
+  border-bottom: 2px;
+  box-shadow: inset 0px -2px 0px #33A4FF;
+}
+
+.basic-multi-select.selected .select__control--is-focused .select__multi-value{
+  background: #fff !important;
+}
+
+.basic-multi-select .select__placeholder{
+  color: #AFAFAF;
+}
+
+.basic-multi-select .select__menu {
+  border-radius: 0px;
+  text-align: left;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  color: #383838;
+}
+
+.basic-multi-select .select__multi-value{
+  background: #EBF6FF;
+  width: 208px;
+  height: 40px;
+}
+
+.basic-multi-select .select__multi-value__label{
+  padding: 8px;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 23.8px;
+  width: 84%;
+  text-align: left;
+}
+
+.basic-multi-select .select__multi-value__remove:hover{
+    background-color: transparent;
+    color: inherit;
+}
